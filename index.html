@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clock App</title>
+    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,7 +13,28 @@
         <img src="./file/clock.png" class="clock" alt="" srcset="">
         <h1 class="time">12:12:00 AM</h1>
         </div>
-
+        <div class="btn-container">
+        <button class="btn set-alarm">Set Alarm <ion-icon name="arrow-dropdown-circle"></ion-icon></button>
+        <button class="btn stop-watch">Stop Watch <ion-icon name="arrow-dropdown-circle"></ion-icon></button>
+        <button class="btn set-timer">Set Timer <ion-icon name="arrow-dropdown-circle"></ion-icon></button>
+        </div>
+        <div class="alarm-container">
+            <h2 class="text">Alarm Clock</h2>
+            <div class="set-alarm">
+<input type="number" name="hour" id="hour" value="5">
+<input type="number" name="min" id="min" value="6">
+<input type="text" name="ampm" id="ampm" value="AM">
+            </div>
+            <div>
+            <button id="set-alarm">
+                Set Alarm
+            </button>
+            <button id="clear-alarm">
+                Clear Alarm
+            </button>
+            </div>
+    </div>
+    
     </div>
     <script src="app.js"></script>
 </body>
